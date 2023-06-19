@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo">portfolio</a>
+        <div class="menutoggle"></div>
+        <ul class="nav">
+            <li class="active"><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </header>
+    <section id="home">
+        <div class="content">
+            <h2>Atif Abbasi</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id deleniti ipsa minima cupiditate explicabo
+                odio qui recusandae commod Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae officia modi
+                quam, fuga placeat vero odit necessitatibus. Corporis at voluptatum magni optio aut, accusantium, ullam
+                recusandae, quos culpa vel illum?</p>
+            <a href="#" class="btn">Conatct Me</a>
+        </div>
+        <img src="img.png" class="men" alt="">
+    </section>
+    <!-- services section  -->
+    <section id="services">
+        <div class="sectext">
+            <h2>What I am At Great At </h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis nostrum exercitationem harum amet et
+                ducimus praesentium ea aliquid voluptate iure unde fugiat vitae, ratione a ipsam esse aut? Iste,
+                tempore.</p>
+        </div>
+        <div class="content">
+            <div class="servicesbx">
+                <img src="img1.png" alt="">
+                <h3>Coder</h3>
+            </div>
+            <div class="servicesbx">
+                <img src="img2.png" alt="">
+                <h3>Back-End Developer</h3>
+            </div>
+            <div class="servicesbx">
+                <img src="img3.png" alt="">
+                <h3>App Developer</h3>
+            </div>
+            <div class="servicesbx">
+                <img src="img5.png" alt="">
+                <h3>Video Editing</h3>
+            </div>
+        </div>
+        <div class="center">
+            <a href="#" class="btn"> Hire Me</a>
+        </div>
+    </section>
+    <!-- portfolio section  -->
+    <section id="portfolio">
+        <div class="sectext">
+            <h2>My Work Collection </h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis nostrum exercitationem harum amet et
+                ducimus praesentium ea aliquid voluptate iure unde fugiat vitae, ratione a ipsam esse aut? Iste,
+                tempore.</p>
+        </div>
+        <div class="content">
+            <div class="imgbx">
+                <img src="image1.jpg" alt="">
+            </div>
+            <div class="imgbx">
+                <img src="image2.jpg" alt="">
+            </div>
+            <div class="imgbx">
+                <img src="omage3.jpg" alt="">
+            </div>
+            <div class="imgbx">
+                <img src="iamge4.jpg" alt="">
+            </div>
+            <div id="" class="imgbx">
+                <img src="image5.jpg" alt="">
+            </div>
+            <div class="imgbx">
+                <img src="image6.jpg" alt="">
+            </div>
+
+        </div>
+        <div class="center">
+            <a href="#" class="btn"> View More</a>
+        </div>
+    </section>
+    <!-- contact section  -->
+    <section id="contact">
+        <div class="sectext">
+            <h2>Contact Me </h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis nostrum exercitationem harum amet et
+                ducimus praesentium ea aliquid voluptate iure unde fugiat vitae, ratione a ipsam esse aut? Iste,
+                tempore.</p>
+        </div>
+        <div class="content">
+            <a href="#">
+                <ion-icon name="mail-outline"></ion-icon>
+                Atifabbasi@gmail.com
+            </a>
+            <a href="#">
+                <ion-icon name="logo-whatsapp"></ion-icon>
+                Whatsapp
+            </a>
+            <a href="#">
+                <ion-icon name="logo-facebook"></ion-icon>
+                Facebook
+            </a>
+            <a href="#">
+                <ion-icon name="logo-instagram"></ion-icon>
+                Instagram
+            </a>
+        </div>
+        <div class="center">
+            <p class="copyright">copyright 2023 <a href="#">Online Tutorial</a>All Right Reserved </p>
+        </div>
+    </section>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script>
+        let list = document.querySelectorAll('.nav li');
+        function active(){
+            list.forEach((i)=>
+            i.classList.remove('active'));
+            this.classList.add('active');
+        }
+        list.forEach((i) =>
+        i.addEventListener('click',active));
+    </script>
+</body>
+
+</html>
